@@ -25,8 +25,8 @@ ouput：
 
 
 
-
-import java.util.Scanner; //闰年计算
+/* 闰年计算*/
+import java.util.Scanner; 
 public static boolean isLeaoYear(int year){ 
         if((year%4==0&&year%100!=0) || (year%400==0)){
             return true;

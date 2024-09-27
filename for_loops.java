@@ -1,3 +1,4 @@
+/*圣诞树*/
 public class Anewone {
     public static void main(String[] args) {
         int rows=4;//圣诞树,正三角
@@ -20,8 +21,41 @@ ouput：
    * * 
   * * * 
  * * * * 
-
 */
+
+
+
+
+import java.util.Scanner; //闰年计算
+public static boolean isLeaoYear(int year){ 
+        if((year%4==0&&year%100!=0) || (year%400==0)){
+            return true;
+        }else{
+            return false;
+        }
+    }
+public static void main(String[] args) {
+    Scanner scanner=new Scanner(System.in);//闰年计算
+        System.out.println("Enter a year");
+        int year=scanner.nextInt();
+        if(isLeaoYear(year)){
+            System.out.println(year+" is a leap year");
+        }else{
+            System.out.println(year+" is not a leap year");
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
